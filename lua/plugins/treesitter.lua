@@ -10,7 +10,7 @@ return {
             local treesitter_config = require("nvim-treesitter.configs")
 
             treesitter_config.setup({
-                ensure_installed = { "c", "lua", "vim", "vimdoc", "rust", "javascript", "typescript", "query", "markdown" },
+                ensure_installed = { "bash", "c", "lua", "vim", "vimdoc", "rust", "javascript", "typescript", "query", "markdown" },
                 auto_install = true,
                 hightlight = {
                     enable = true

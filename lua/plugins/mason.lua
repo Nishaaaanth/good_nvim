@@ -66,6 +66,15 @@ return {
                 },
                 on_attach    = on_attach
             })
+            lspconfig.bashls.setup({
+                capabilities = capabilities,
+                filetypes    = {
+                    "sh",
+                    "bash",
+                    "bash-language-server"
+                },
+                on_attach    = on_attach
+            })
         end
     }
 }
