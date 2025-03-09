@@ -3,5 +3,4 @@ function Color(color)
 end
 
 return {
-    -- "rafi/awesome-vim-colorschemes",
 }

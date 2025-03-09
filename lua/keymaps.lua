@@ -17,6 +17,7 @@ vim.keymap.set('n', "<leader>ca", "<CMD>lua Color('anderson')<CR>", { desc = '[C
 vim.keymap.set('n', "<leader>cm", "<CMD>lua Color('mountaineer')<CR>", { desc = '[C]olor [m]ountaineer' })
 vim.keymap.set('n', "<leader>cf", "<CMD>lua Color('fahrenheit')<CR>", { desc = '[C]olor [f]ahrenheit' })
 vim.keymap.set('n', "<leader>cc", "<CMD>lua Color('catppuccin-mocha')<CR>", { desc = '[C]olor [c]atppuccin-Mocha' })
+vim.keymap.set('n', "<leader>cg", "<CMD>lua Color('gruber-darker')<CR>", { desc = '[C]olor [g]ruber-darker' })
 
 -- Tabs
 vim.keymap.set('n', "<M-t>", "<CMD>tabnew<CR>", {})

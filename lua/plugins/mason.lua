@@ -38,6 +38,24 @@ return {
             lspconfig.prismals.setup({
                 capabilities = capabilities
             })
+            lspconfig.tailwindcss.setup({
+                capabilities = capabilities
+            })
+            lspconfig.cssls.setup({
+                capabilities = capabilities
+            })
+            lspconfig.html.setup({
+                capabilities = capabilities
+            })
+            lspconfig.jdtls.setup({
+                capabilities = capabilities
+            })
+            lspconfig.emmet_ls.setup({
+                capabilities = capabilities
+            })
+            lspconfig.jsonls.setup({
+                capabilities = capabilities
+            })
 
             vim.keymap.set('n', "<leader>lr", vim.lsp.buf.rename, { desc = "[L]sp [r]ename" })
             vim.keymap.set('n', "<leader>lk", vim.lsp.buf.hover, { desc = "[L]sp [k]nowledge" })
