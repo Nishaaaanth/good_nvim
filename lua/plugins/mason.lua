@@ -1,4 +1,3 @@
--- ctrl + t => jump back from tag list
 -- Telescope diagnosiics => ctrl+q => jump to
 
 return {
@@ -24,12 +23,26 @@ return {
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
             lspconfig.lua_ls.setup({
-                capabilities = capabilities
+                capabilities = capabilities,
+                settings = {
+                    Lua = {
+                        diagnostics = {
+                            globals = { "vim" }
+                        },
+                        workspace = {
+                            library = { vim.env.VIMRUNTIME },
+                            checkThirdParty = false
+                        },
+                        telemetry = {
+                            enable = false,
+                        }
+                    }
+                }
             })
             lspconfig.clangd.setup({
                 capabilities = capabilities
             })
-            lspconfig.tsserver.setup({
+            lspconfig.ts_ls.setup({
                 capabilities = capabilities
             })
             lspconfig.bashls.setup({

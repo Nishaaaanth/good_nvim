@@ -41,7 +41,15 @@ return {
                     }
                 }
             })
-        end
-    },
 
+            local highlight_group = vim.api.nvim_create_augroup("Highlight", { clear = true })
+            vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+                group = highlight_group,
+                pattern = { "*.prisma" },
+                callback = function()
+                    vim.cmd("TSEnable highlight")
+                end
+            })
+        end,
+    },
 }
