@@ -7,6 +7,6 @@ return {
             stages = "fade"
         })
 
-        require("notify")("Welcome Home Nishanth")
+        require("notify")("Welcome Back Nishanth!!")
     end
 }
