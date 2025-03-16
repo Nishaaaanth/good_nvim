@@ -15,6 +15,7 @@ return {
             vim.keymap.set('n', "<leader>ga", "<CMD>Git add .<CR>", { desc = "[G]it [A]dd" })
             vim.keymap.set('n', "<leader>gc", "<CMD>Git commit<CR>", { desc = "[G]it [C]ommit" })
             vim.keymap.set('n', "<leader>gb", "<CMD>Git blame<CR>", { desc = "[G]it [B]lame" })
+            vim.keymap.set('n', "<leader>gp", "<CMD>sp<CR><CMD>term<CR>igit push<CR>", { desc = "[G]it [P]ush" })
         end
     }
 }
