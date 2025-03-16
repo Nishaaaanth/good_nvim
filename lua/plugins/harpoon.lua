@@ -12,16 +12,16 @@ return {
 
             vim.keymap.set('n', "<leader>ag", ui.toggle_quick_menu)
 
-            vim.keymap.set('n', "<leader>au", function()
+            vim.keymap.set('n', "<C-u>", function()
                 ui.nav_file(1)
             end)
-            vim.keymap.set('n', "<leader>ai", function()
+            vim.keymap.set('n', "<C-i>", function()
                 ui.nav_file(2)
             end)
-            vim.keymap.set('n', "<leader>ao", function()
+            vim.keymap.set('n', "<C-o>", function()
                 ui.nav_file(3)
             end)
-            vim.keymap.set('n', "<leader>ap", function()
+            vim.keymap.set('n', "<C-p>", function()
                 ui.nav_file(4)
             end)
         end

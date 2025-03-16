@@ -1,4 +1,5 @@
 -- Telescope diagnostics => ctrl+q => jump to
+-- For indent_style & indent_size we can have a ".editorconfig" file with [*.fileType] at the top
 
 return {
     {

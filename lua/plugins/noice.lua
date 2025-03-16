@@ -9,6 +9,7 @@ return {
 
     config = function()
         require("noice").setup({
+            background_color = "#000",
             lsp = {
                 override = {
                     ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
