@@ -29,3 +29,18 @@ require("lazy").setup({
         notify = false
     }
 })
+
+local terminal_group = vim.api.nvim_create_augroup("Terminal", { clear = true })
+vim.api.nvim_create_autocmd({ "TermOpen" }, {
+  group = terminal_group,
+  pattern = "*",
+  command = "setlocal nonumber norelativenumber"
+})
+
+local yank_group = vim.api.nvim_create_augroup("Yank", { clear = true })
+vim.api.nvim_create_autocmd({ "TextYankPost" }, {
+  group = yank_group,
+  callback = function()
+    vim.highlight.on_yank()
+  end
+})

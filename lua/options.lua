@@ -13,6 +13,7 @@ vim.o.termguicolors = true
 vim.o.guicursor = ''
 vim.g.bg = "dark"
 vim.o.hlsearch = false
+vim.o.signcolumn = "yes:1"
 
 -- Split
 vim.o.splitbelow = true
@@ -28,13 +29,13 @@ vim.o.mouse = 'a'
 vim.opt.inccommand = "split"
 vim.o.updatetime = 50
 vim.o.clipboard = "unnamedplus"
+vim.opt.conceallevel = 0
+vim.g.mapleader = " "
+vim.cmd [[hi @function.builtin guifg=yellow]]
 
 -- Netrw
 -- vim.g.netrw_browse_split = 0
 -- vim.g.netrw_banner = 0
 -- vim.g.netrw_winsize = 26
-
-vim.opt.conceallevel = 0
-vim.g.mapleader = " "
 
 return {}
