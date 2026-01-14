@@ -53,6 +53,9 @@ return {
                     }
                 }
             }
-        }
+        },
+        config = function()
+            Color("catppuccin-mocha");
+        end
     },
 }

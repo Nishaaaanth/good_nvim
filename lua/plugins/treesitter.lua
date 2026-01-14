@@ -12,7 +12,7 @@ return {
             treesitter_config.setup({
                 ensure_installed = { "bash", "c", "lua", "vim", "vimdoc", "rust", "javascript", "typescript", "query", "markdown" },
                 auto_install = true,
-                hightlight = {
+                highlight = {
                     enable = true
                 },
                 indent = {
